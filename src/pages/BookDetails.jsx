@@ -24,8 +24,8 @@ const BookDetails = () => {
 
   return (
     <div className="container mx-auto my-10">
-      <div className="flex flex-col md:flex-row space-x-0 md:space-x-6">
-        <img src={book.image} alt={book.bookName} className="w-full md:w-64 h-80 object-cover" />
+      <div className="flex flex-col md:flex-row space-x-0 md:space-x-6 ml-4">
+        <img src={book.image} alt={book.bookName} className="w-full md:w-64 h-80 object-cover rounded-md" />
         <div className="mt-4 md:mt-0">
           <h2 className="text-3xl font-bold">{book.bookName}</h2>
           <p className="mt-2">Author: {book.author}</p>
