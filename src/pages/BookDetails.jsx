@@ -1,5 +1,6 @@
 import { useParams, useLoaderData } from 'react-router-dom';
 import { toast } from 'react-toastify';
+import StarRating from '../components/StarRating';
 const BookDetails = () => {
     const handleAddToWishlist = () => {
     toast.success(`${book.bookId} ${book.bookName} has been successfully added to the Wishlist`);
@@ -31,6 +32,7 @@ const BookDetails = () => {
           <p className="mt-2">Author: {book.author}</p>
           <p>Category: {book.category}</p>
           <p>Rating: {book.rating}</p>
+          <p>Rating:<StarRating rating={book.rating} /></p>
           <p>Publisher: {book.publisher}</p>
           <p>Year of Publishing: {book.yearOfPublishing}</p>
           <p>Total Pages: {book.totalPages}</p>

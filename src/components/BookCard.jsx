@@ -1,17 +1,18 @@
 // components/BookCard.jsx
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
+import StarRating from './StarRating';
 
 const BookCard = ({ book }) => {
   return (
-    <div className="p-4 border rounded-lg shadow-md">
-      <img src={book.image} alt={book.bookName} className="h-40 w-full object-cover mb-4" />
+    <div className="p-4 border rounded-lg shadow-md bg-slate-300">
+      <img src={book.image} alt={book.bookName} className="h-40 w-full object-cover mb-4 rounded-md" />
       <h2 className="text-xl font-semibold">{book.bookName}</h2>
-      <p>Author: {book.author}</p>
+      <p className='text-slate-950'>Author: {book.author}</p>
       <p>Category: {book.category}</p>
-      <p>Rating: {book.rating}</p>
+      <p>Rating: <StarRating rating={book.rating} /></p>
       <Link to={`/book/${book.bookId}`}>
-        <button className="mt-2 p-2 bg-blue-500 text-white rounded-lg">Book Details</button>
+        <button className="mt-2 p-2 bg-blue-500 text-white rounded-lg mx-auto text-center">Book Details</button>
       </Link>
     </div>
   );
