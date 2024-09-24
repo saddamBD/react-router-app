@@ -50,7 +50,7 @@ const FAQ = () => {
       <h1 className="text-3xl font-bold text-center mb-8">Frequently Asked Questions</h1>
       <div className="space-y-4">
         {faqs.map((faq, index) => (
-          <div key={index} className="border-b pb-4">
+          <div key={index} className="border-b pb-4 bg-sky-100">
             <h2
               onClick={() => toggleFAQ(index)}
               className="text-xl font-semibold cursor-pointer"

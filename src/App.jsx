@@ -1,5 +1,4 @@
 import { Outlet, NavLink } from "react-router-dom";
-
 const App = () => {
   return (
     <div>
@@ -18,7 +17,7 @@ const Navbar = () => {
       <div className="container mx-auto flex justify-between items-center">
         <div className="text-white font-bold text-xl">
           <NavLink to="/" className="hover:text-gray-300">
-            BookShop
+           BookShop
           </NavLink>
         </div>
         <div className="flex space-x-4">
@@ -50,7 +49,7 @@ const Navbar = () => {
 
 const Footer = () => (
   <footer className="bg-gray-800 text-white text-center py-4 mt-8">
-    &copy; 2024 BookShoh,saddam.doict@gmail.com, All rights reserved.
+    &copy; 2024 BookShoh saddam.doict@gmail.com, All rights reserved.
   </footer>
 );
 
